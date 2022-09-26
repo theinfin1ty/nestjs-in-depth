@@ -1,7 +1,8 @@
 import { User } from 'src/typeorm/User';
+import { SessionEntity } from 'src/typeorm/Session';
 
-const entities = [User];
+const entities = [User, SessionEntity];
 
-export { User };
+export { User, SessionEntity };
 
 export default entities;
