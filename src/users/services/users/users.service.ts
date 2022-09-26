@@ -30,4 +30,9 @@ export class UsersService {
     const newUser = this.userRepository.create(createUserDto);
     return this.userRepository.save(newUser);
   }
+
+  async findUserByUsername(email: string) {
+    const user = await this.userRepository.findOneBy({ email });
+    return user;
+  }
 }
