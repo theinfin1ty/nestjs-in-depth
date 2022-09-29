@@ -1,5 +1,5 @@
-import { User } from 'src/typeorm/User';
-import { SessionEntity } from 'src/typeorm/Session';
+import { User } from './User';
+import { SessionEntity } from './Session';
 
 const entities = [User, SessionEntity];
 

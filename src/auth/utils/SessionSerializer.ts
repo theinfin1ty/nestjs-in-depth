@@ -1,6 +1,6 @@
 import { PassportSerializer } from '@nestjs/passport';
-import { User } from 'src/typeorm';
-import { UsersService } from 'src/users/services/users/users.service';
+import { User } from '../../typeorm';
+import { UsersService } from '../../users/services/users/users.service';
 
 export class SessionSerializer extends PassportSerializer {
   constructor(private readonly userService: UsersService) {
